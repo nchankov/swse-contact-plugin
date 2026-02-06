@@ -36,6 +36,11 @@ To include the contact form in your website, simply add the following line to th
 ```html
 <!--include://contact//form.html-->
 ```
+Or if you want to pass custom variables to the form, you can do it like this:
+
+```html
+<!--include://contact//form.html ["title" => "Contact Form", "description" => "Please fill out the form below to get in touch with us."]-->
+```
 
 This will render the contact form on the page. When the form is submitted, it will send an email to the address.
 
