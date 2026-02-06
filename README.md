@@ -12,6 +12,12 @@ cd your-swse-project
 git clone https://github.com/nchankov/swse-contact-plugin.git contact
 ```
 
+Add the required dependencies using composer:
+
+```bash
+composer require phpmailer/phpmailer
+```
+
 ## Configuration
 
 The plugin is configured using environment variables. You can create a `.env` file in the `contact` directory. Use 
