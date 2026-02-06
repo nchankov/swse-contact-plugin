@@ -1,6 +1,11 @@
 <div class="contact-form">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    <h1>Contact Us</h1>
+    <!--if($title)-->
+        <h1><!--$title-->></h1>
+    <!--endif-->
+    <!--if($description)-->
+        <p><!--$description--></p>
+    <!--endif-->
     <form method="post" data-contact-form action="/contact/form">
         <div data-flush></div>
         <!--csrf-->
