@@ -1,0 +1,28 @@
+<div class="contact-form">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <h1>Contact Us</h1>
+    <form method="post" data-contact-form action="/contact/form">
+        <div data-flush></div>
+        <!--csrf-->
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="cf-turnstile" 
+            id="turnstile-widget"
+            data-sitekey="<!--e("CLOUDFLARE_SITE_KEY")-->"
+            data-callback="onTurnstileSuccess"
+            data-error-callback="onTurnstileError"
+            data-theme="light">
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</div>
