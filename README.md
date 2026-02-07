@@ -4,7 +4,7 @@ The plugin provide simple contact form functionality which can be used to send e
 It uses PHPMailer library to send the emails and it is configured using environment variables.
 
 # Functionality provided by the plugin:
-- Render a contact form with fields for name, email, subject and message.
+- Render a contact form with fields for name, email and message.
 - Validate the form input and display error messages if needed.
 - Turnstile integration to prevent spam submissions.
 - Send an email to the website owner with the form data using PHPMailer.
